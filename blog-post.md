@@ -27,7 +27,7 @@ Behind the scenes, the code  generates a kaltura session using the user ID and g
 
 ### Collection ###
 
-Simply put, a collection is a category of content, that contains entries in your account. A category has options for metadata, as well as the option to set entitelments and give specific restrictions to the collaborating users on the category - such as public or private view access, and who can publish content into this category (including moderation). In our sample application, the collection name can be modified via the url, as well as the user id and roles. this makes it easy to see what will be displayed in the case of varying users with varying content and varying permissions. 
+Simply put, a collection is a category of content that contains entries from the application owner's account. A category has options for metadata, as well as settings for various levels of moderation. The hosting application determines which level of permissions each user has in the collection. In our sample code, the collection name can be modified via the url, along with the user ID and roles. This makes it easy to see what will be displayed in the case of varying users with varying content and permissions. 
 
 ### Media Pickers ###
 
@@ -37,7 +37,7 @@ The Browse, Search and Embed iFrame (BSE), a key component of KAF, is used for t
 
 This use case describes giving users a tool to choose a video for the placeholder in a landing page template. Upon selection of the entry, it is embedded as a kaltura player in the landing page, and the template need only remember the entry ID in order to load that same video when rendering the page. 
 
-What's happening behind the scenes? When the entry is chosen, the Kaltura BSE url is called with a suitable Kaltura session. When that session was generated, the return url containing the handler for this specific landing page template (in this case 'handle_selected_media.php') was declared in the privilege string with which the KS was created. That handler in turn calls the script that embeds the kaltura widget with the selected entry ID, along with the partner ID and UI Conf ID that are set in the config. 
+What's happening behind the scenes? When the entry is chosen, the Kaltura BSE url is called with a suitable Kaltura session. When that session was originally generated, the return url containing the handler for this specific landing page template (in this case 'handle_selected_media.php') was declared in the privilege string with which the KS was created. That handler receives a url from KAF and saves it to a file database with the entry ID. That way, when the landing page is loaded by a user, a given entry ID maps to the url of the iFrame containing the relevant video player. A new KS is generated each time and added to that KAF url.
 
 **Thumbnail Selection for Emails**
 
@@ -50,7 +50,6 @@ This functionality echoes the others we've mentioned above, with more of a DIY a
 
 **Product Image**
 
-Similar to the grabbbable embed, but this time for a product image tag. In this case, however, the metedata of the selected entry is packaged as an object, which is easier to send around. The object, as can be seen in `handle_selected_product.php` is made up of embed data like the title, description, tags and duration of the entry. You can learn more the schema [here](https://developers.google.com/search/docs/data-types/video)
+Similar to the grabbbable embed, but this time for a product image tag. In this case, however, the metedata of the selected entry is packaged as an object, which is easier to send around. The object, as can be seen in `handle_selected_product.php` is made up of embed data like the title, description, tags and duration of the entry. You can learn more the schema [here](https://developers.google.com/search/docs/data-types/video).
 
-
-While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. You can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
+While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. While using the iFrames as a standalone doesn't provide KAF features such as player anayltics, you can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
