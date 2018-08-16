@@ -3,7 +3,7 @@
 The Kaltura Applications Framework, or KAF as we call it around here, is a configurable set of iFrame views that streamlines the integration of common media capabilites and workflows that are part of the Kaltura platform. Contained are a set of embeddable media tools that developers can embed in their applications with minimal code, accelelerating the time to market for media-centric application workflows. 
 KAF also supports the [LTI standard](https://en.wikipedia.org/wiki/Learning_Tools_Interoperability) that simplifies integration into learning management systems. 
 
-We've created a [sample application](link) that will help showcase the various functionalities of KAF. 
+We've created a [sample application](https://github.com/kaltura/kaltura-application-framework-guide) that will help showcase the various functionalities of KAF. 
 
 ### Things you'll need in order to run the sample code: ###
 
@@ -18,7 +18,7 @@ Be sure to set these variables in the kaltura_config file of the sample code. Ot
 
 A word about privileges: every action done in KAF requires a KS (Kaltura Session). Each KS is created with a `privileges` stringa and a user ID, which in most cases is an email address but can technically be any string, and essentially represents the unique user who is currently logged in to your application. The privilege string represents the user's role, what he/she will have access to, as well as other [security options](https://knowledge.kaltura.com/kaltura-mediaspacekaltura-application-framework-kaf-roles-and-permissions). We will cover the KAF specific privileges below in the context of each KAF view.
 
-Now let's discuss the various iFrames and parts of the [sample code](link). 
+Now let's discuss the various iFrames and parts of the [sample code](https://github.com/kaltura/kaltura-application-framework-guide). 
 
 ### My Media ###
 
@@ -53,4 +53,4 @@ This functionality echoes the others we've mentioned above, with more of a DIY a
 Similar to the grabbbable embed, but this time for a product image tag. In this case, however, the metedata of the selected entry is packaged as an object, which is easier to send around. The object, as can be seen in `handle_selected_product.php` is made up of embed data like the title, description, tags and duration of the entry. You can learn more the schema [here](https://developers.google.com/search/docs/data-types/video).
 
 
-While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. You can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
+While you can get really creative with the Browse, Search and Embed functionality, the use cases in the [sample code](https://github.com/kaltura/kaltura-application-framework-guide) should provide a pretty good picture of all that can be done with KAF. You can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
