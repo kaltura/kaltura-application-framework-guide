@@ -1,6 +1,6 @@
 # Kaltura Applications Framework: Amplify your video workflows with just a few lines of code #
 
-The Kaltura Applications Framework, or KAF as we call it around here, is a configurable set of iFrane views that streamlines the integration of common media capabilites and workflows that are part of the Kaltura platform. Contained are a set of embeddable media tools that developers can embed in their applications with minimal code, accelelerating the time to market for media-centric application workflows. 
+The Kaltura Applications Framework, or KAF as we call it around here, is a configurable set of iFrame views that streamlines the integration of common media capabilites and workflows that are part of the Kaltura platform. Contained are a set of embeddable media tools that developers can embed in their applications with minimal code, accelelerating the time to market for media-centric application workflows. 
 KAF also supports the [LTI standard](https://en.wikipedia.org/wiki/Learning_Tools_Interoperability) that simplifies integration into learning management systems. 
 
 We've created a [sample application](link) that will help showcase the various functionalities of KAF. 
@@ -23,7 +23,7 @@ Now let's discuss the various iFrames and parts of the [sample code](link).
 ### My Media ###
 
 This is like a personalized media locker for end users where they can upload assets and manage videos and other media files. 
-Behind the scenes, the code  generates a kaltura session using the userid and given prileges for the user and loads their relevant media in a responsive iFrame. That iFrame is responsive and fairly similar to what you may have seen in mediaspace. 
+Behind the scenes, the code  generates a kaltura session using the user ID and given privileges for the user and loads the relevant media in a responsive iFrame, which is similar to what you may have seen in mediaspace. 
 
 ### Collection ###
 
@@ -31,7 +31,7 @@ Simply put, a collection is a category of content, that contains entries in your
 
 ### Media Pickers ###
 
-The Browse, Search and Embed iFrame (BSE), is a key component of KAF, is used for the sole purpose of selecting content from the user's own "my media" library or any shared repositories the user has access to. The BSE view may be used for a variety of apllicative use cases. Our sample application shows a few such applicative scenarios; 
+The Browse, Search and Embed iFrame (BSE), a key component of KAF, is used for the sole purpose of selecting content from the user's own "my media" library or shared repository that is enabled in the KAF instance that the user is given access to. The BSE view may be used for a variety of apllicative use cases. Our sample application shows a few such scenarios. 
 
 **The Video Landing Page**
 
@@ -54,6 +54,3 @@ Similar to the grabbbable embed, but this time for a product image tag. In this 
 
 
 While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. You can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
-
-
-
