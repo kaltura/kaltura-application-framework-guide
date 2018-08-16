@@ -46,10 +46,11 @@ Similar to the video picker above, the BSE url is called with a kaltura session 
 
 **Grabbable Embed**
 
-This functionality echoes the others we've mentioned above, with more of a DIY approach. It will allow users to grab the embed codes for specific media assets, in order to embed in their own pages. (TEST: does the code provide proper embed code for images vs. video vs. audio entries???)
+This functionality echoes the others we've mentioned above, with more of a DIY approach. It will allow users to grab the embed codes for specific media assets, in order to embed in their own pages. Keep in mind that while it's easy to use this iFrame as a standalone and implement that embed code wherever it's needed, you might be forfeiting KAF environment functionalities like player analytics. 
 
 **Product Image**
 
 Similar to the grabbbable embed, but this time for a product image tag. In this case, however, the metedata of the selected entry is packaged as an object, which is easier to send around. The object, as can be seen in `handle_selected_product.php` is made up of embed data like the title, description, tags and duration of the entry. You can learn more the schema [here](https://developers.google.com/search/docs/data-types/video).
 
-While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. While using the iFrames as a standalone doesn't provide KAF features such as player anayltics, you can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
+
+While you can get really creative with the Browse, Search and Embed functionality, these use cases should provide a pretty good picture of all that can be done with KAF. You can see from the few workflows just how easy and simple it is to power any application with media selection scenarios and implement a whole set of robust capabilities... with just a couple lines of code. 
