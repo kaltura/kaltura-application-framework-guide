@@ -12,6 +12,8 @@ These should all be set in the config, in addition to:
 - The `Domain` where the sample code is being hosted - change this accordingly.
 - The `Kaltura Service URL` - which should stay as is unless you've been informed otherwise. 
 
+You'll also find the `generateSession` function which creates a Kaltura Session using the Kaltura PHP Client Library. This KS will be included in calls made to the KAF endpoint, in order to authenticate and determine privileges.
+
 ### Templates ###
 
 Basic functionalities of KAF that every video application would contain: a media gallery and a way to see a smaller collection of content
