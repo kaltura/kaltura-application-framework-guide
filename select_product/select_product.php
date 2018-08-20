@@ -8,7 +8,7 @@ $userId = 'user';
 
 $privileges = 'actionslimit:-1,role:privateOnlyRole,returnUrl:'.BSE_RETURN_URL; 
 
-$ks = generateSession($userId,$privs);
+$ks = generateSession($userId,$privileges);
 
 $bseURL = BSE_URL.$ks."?type=image";
 

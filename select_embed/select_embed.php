@@ -8,7 +8,7 @@ $userId = 'Avital.tzubeli@kaltura.com';
 
 $privileges = 'actionslimit:-1,role:privateOnlyRole,returnUrl:'.BSE_RETURN_URL;  
 
-$ks = generateSession($userId,$privs);
+$ks = generateSession($userId,$privileges);
 
 $bseURL = BSE_URL.$ks;
 

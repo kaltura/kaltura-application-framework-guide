@@ -45,7 +45,7 @@ $bseURL = BSE_URL.$ks;
       <!--  inner pusher div defines aspect ratio: in this case 16:9 ~ 56.25% -->
       <div id="dummy" style="margin-top: 56.25%;"></div>
       <!--  the player embed target, set to take up available absolute space   -->
-      <div class="mediaPlayer" id="<?php echo $player_id;?>" style="position:absolute;top:0;left:0;left: 0;right: 0;bottom:0;border:solid thin black;">
+      <div class="mediaPlayer" id="<?php echo $player_id;?>" style="position:absolute;top:0;left:0;left: 0;right: 0;bottom:0;">
       </div>
     </div>        
     </p>
