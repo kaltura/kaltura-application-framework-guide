@@ -22,13 +22,19 @@ This is like a personalized media locker for end users where they can upload ass
 
 **Collection**
 
-A collection is a category of content that contains entries from the application owner's account. The collection name can be modified via the url, along with the user ID and roles. This makes it easy to see what will be displayed in the case of varying users with varying content and permissions. 
+A collection is a category of content that contains entries from the application owner's account. The `Collection Name` is passed into the privileges string, and KAF maps it to the relevant category. The collection name can be modified via the url, along with the user ID and roles. This makes it easy to see what will be displayed in the case of varying users with varying content and permissions. The `userRole` is set to *viewer* but should be set to privateOnlyRole in order to allow publishing. A `contextualRole` determines what a user can do in the context of a collection, and we've set ours to 4 which is *none,* meaning the user can only access public collections. Other options are: 
+- 0: `MANAGER`, manages all aspects of collection
+- 1: `MODERATOR`, notified on new pending items, can access moderation queue for approval/rejection
+- 2: `CONTRIBUTOR`, can add items to collection
+- 3: `MEMBER`, can access collection (relevant if collection is restricted/private)
+- 4: `NONE`, can access public collections 
+Read more about roles and permissions [here](https://knowledge.kaltura.com/kaltura-mediaspacekaltura-application-framework-kaf-roles-and-permissions).
 
 ### Media Pickers ###
 
 The Browse, Search and Embed iFrame (BSE), a key component of KAF, is used for the sole purpose of selecting content from the user's own "my media" library or shared repository that is enabled in the KAF instance that the user is given access to. 
 You'll find similar workflows in each of the four use cases: 
-**The Video Landing Page** allows users to choose a video for the placeholder in a landing page template. We've added a landing page that will hold onto the entry after it was selected. 
+**The Video Landing Page** allows users to choose a video for the placeholder in a landing page template. We've added a landing page and a file DB that will hold onto the entry after it was selected. 
 **Thumbnail Selection for Emails** provides a tool for picking a frame (image) from a video that will be used as a thumbnail in an email. 
 
 **Grabbable Embed** is a more customizable approach to the above scenarios. It allows users to generate embed codes for specific media assets in order to embed in their own pages 
