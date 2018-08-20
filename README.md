@@ -51,7 +51,7 @@ You'll find similar workflows in each of the four use cases:
 
 `bseURL:` The URL to KAF which contains the Kaltura Session which was generated using the userId and privileges
 
-**Handlers:** Each of the media pickers has its own handler, a script which collects the post data, and sends it back to the `handleSelected` function in each of the pickers.  
+**Handlers:** Each of the media pickers has its own handler, a script which collects the post data, and sends it back as an object to the `handleSelected` function in each of the pickers.  
 
 
 # How you can help (guidelines for contributors) 
