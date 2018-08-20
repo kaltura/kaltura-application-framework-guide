@@ -1,7 +1,7 @@
 # kaltura-application-framework-guide
 An integration guide for developers implementing the Kaltura Applications Framework in their own applications. 
 
-# To run the sample code you'll need: 
+## To run the sample code you'll need: 
 - A `Kaltura Instance URL`, which you'll receive with your KAF account. Send us an email at vpaas@kaltura.com to sign up for an account. 
 - Your `Kaltura Partner ID` and `Admin Secret`, which can be found under Integration Settings in the Kaltura Management Console. 
 - The `Kaltura PHP 5 Library` which can be found [here](https://github.com/kaltura/KalturaGeneratedAPIClientsPHP/releases)
