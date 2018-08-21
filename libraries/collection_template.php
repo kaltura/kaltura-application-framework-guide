@@ -25,10 +25,10 @@ if (isset($_GET['userContextualRole'])) {
  	$userContextualRole = $_GET['userContextualRole'];
 }
 
-$privs = 'actionslimit:-1,contextId:'.$collectionName.',role:'.$userRole.',userContextualRole:'.$userContextualRole; 
+$privileges = 'actionslimit:-1,contextId:'.$collectionName.',role:'.$userRole.',userContextualRole:'.$userContextualRole; 
 
 
-$ks = generateSession($userId,$privs);
+$ks = generateSession($userId,$privileges);
 
 ?>
 
