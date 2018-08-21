@@ -1,5 +1,5 @@
 <?php
-require_once(dirname(__FILE__).'/../kaltura_config.php');
+require_once(dirname(__FILE__).'/../config.php');
 
 $embeddedUrl = $_POST['url'];
 $thumbnailUrl = $_POST['thumbnailUrl'];
