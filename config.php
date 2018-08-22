@@ -12,6 +12,7 @@ define('KALTURA_UICONF_ID', '00000000');
 
 define('KALTURA_SERVICE_URL', 'http://www.kaltura.com/');
 
+// must be encoded to prevent breaking the entire string when the KS is being parsed
 define('DOMAIN', 'http%3A%2F%2Flocalhost%2Fkaf');
 
 define('BSE_URL', KALTURA_INSTANCE_URL."/browseandembed/index/browseandembed/ks/");
